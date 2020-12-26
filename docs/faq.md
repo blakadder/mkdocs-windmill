@@ -21,9 +21,11 @@ However, you can upload the `edit.htm.gz` (3kB) file to the SPIFFS partition fro
 Download it from: https://github.com/espressif/arduino-esp32/blob/master/libraries/WebServer/examples/FSBrowser/data/edit.htm.gz
 
 When the `edit.htm.gz` file is present on Spiffs you will see an additional File Browser button on the Main Webpage:
+
 ![HTTP configuration](assets/images/faq/faq_file_browser.png "File Browser")
 
 Using that webpage, you can right-click and delete files:
+
 ![HTTP configuration](assets/images/faq/faq_file_delete.png "Delete file")
 
 #### :question: How to delete files from flash?

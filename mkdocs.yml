@@ -23,11 +23,13 @@ nav:
     - displays/MHS4001.md
     - displays/MRB3511.md
     - displays/Waveshare_40RPi_LCD(C).md
-
+  - license.md
 
 markdown_extensions:
   - toc:
       permalink: '#'
+  - admonition
+  - pymdownx.emoji
 
 extra:
   history_buttons: false

@@ -104,27 +104,23 @@ You probably have a typo in the following line which blocks parsing the rest of 
 <p>Each line in <code>pages.jsonl</code> creates <strong>one object</strong> on a page and has to be in the json format.
 The order of objects dictates the layer on the page from bottom to top.</p>
 <p>Example Objects</p>
-<pre><code class="json">{&quot;page&quot;:2,&quot;id&quot;:1,&quot;objid&quot;:12,&quot;x&quot;:5,&quot;y&quot;:20,&quot;h&quot;:50,&quot;w&quot;:50,&quot;enabled&quot;:&quot;true&quot;,&quot;hidden&quot;:&quot;false&quot;}
+<pre><code class="language-json">{&quot;page&quot;:2,&quot;id&quot;:1,&quot;objid&quot;:12,&quot;x&quot;:5,&quot;y&quot;:20,&quot;h&quot;:50,&quot;w&quot;:50,&quot;enabled&quot;:&quot;true&quot;,&quot;hidden&quot;:&quot;false&quot;}
 {&quot;page&quot;:2,&quot;id&quot;:2,&quot;objid&quot;:50,&quot;x&quot;:5,&quot;y&quot;:120,&quot;h&quot;:90,&quot;w&quot;:50,&quot;enabled&quot;:&quot;false&quot;,&quot;hidden&quot;:&quot;false&quot;}
 </code></pre>
-
 <p>Once the object is created, you can reference it with <code>p[x].b[y]</code> where <code>x</code> is the pagenumber and <code>y</code> is the id of the object.</p>
 <p>for example:</p>
 <pre><code>p[2].b[1].w=100
 p[2].b[2].hidden=true
 </code></pre>
-
 <h2 id="comments">Comments<a class="headerlink" href="#comments" title="Permanent link">#</a></h2>
 <p>If any of the required <code>id</code> or <code>objid</code> properties are missing -<em>and the line is still valid json</em>- then it is interpreted as a comment.</p>
 <p>You can also use the <code>page</code> parameter in a comment to set the default page for new objects that don't have a <code>page</code> parameter.</p>
 <p>Example 1: Add a comment on a single line that is ignored.</p>
-<pre><code class="json">{&quot;comment&quot;:&quot; ----------- Page 2 layout ------------&quot;}
+<pre><code class="language-json">{&quot;comment&quot;:&quot; ----------- Page 2 layout ------------&quot;}
 </code></pre>
-
 <p>Example 2: Set the default <code>page</code> for next object(s) to <code>3</code> besides adding a comment as well.</p>
-<pre><code class="json">{&quot;page&quot;:3,&quot;comment&quot;:&quot; ---- My Awesome Color Picker Layout ----&quot;}
+<pre><code class="language-json">{&quot;page&quot;:3,&quot;comment&quot;:&quot; ---- My Awesome Color Picker Layout ----&quot;}
 </code></pre>
-
 <p>If you then omit the <code>page</code> parameter in the lines below this comment, those objects will appear by default on page <code>3</code>.</p>
 <p>?&gt; If the line is not valid json, the parsing of the rest of the file is also stopped.</p>
 <h2 id="blank-lines">Blank Lines<a class="headerlink" href="#blank-lines" title="Permanent link">#</a></h2>

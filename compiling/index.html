@@ -82,15 +82,13 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     <h2 id="cloning">Cloning<a class="headerlink" href="#cloning" title="Permanent link">#</a></h2>
 <p>Make sure to add the <code>--recursive</code> parameter when cloning the project from GitHub. Otherwise git will not download the required submodules in the <code>/lib</code> subdirectory.</p>
-<pre><code class="bash">git clone --recursive https://github.com/fvanroie/hasp-lvgl
+<pre><code class="language-bash">git clone --recursive https://github.com/fvanroie/hasp-lvgl
 </code></pre>
-
 <p>If you already cloned hasp-lvgl without the submodules, you can fetch the submodules seperately using:</p>
-<pre><code class="bash">git submodule update --init --recursive
+<pre><code class="language-bash">git submodule update --init --recursive
 </code></pre>
-
 <p>To switch to a different branch use:</p>
-<pre><code class="bash">git clone --recursive https://github.com/fvanroie/hasp-lvgl
+<pre><code class="language-bash">git clone --recursive https://github.com/fvanroie/hasp-lvgl
 cd hasp-lvgl
 git checkout 0.2.0
 git submodule update --init --recursive

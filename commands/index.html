@@ -124,7 +124,7 @@ This can be handy for bug reporting or documentation.</p>
 <p>The previous screenshot is overwritten.</p>
 <p><code>statusupdate</code></p>
 <p>Reports the status of the MCU. The response will be posted to the state topic:</p>
-<pre><code class="json">    &quot;statusupdate&quot;: {
+<pre><code class="language-json">    &quot;statusupdate&quot;: {
         &quot;status&quot;: &quot;available&quot;,
         &quot;espVersion&quot;: &quot;0.0.6&quot;,
         &quot;espUptime&quot;: 124,
@@ -135,7 +135,6 @@ This can be handy for bug reporting or documentation.</p>
         &quot;espCore&quot;: &quot;2_6_3&quot;
     }
 </code></pre>
-
 <p><code>reboot</code> (alias: <code>restart</code>)</p>
 <p>Saves any changes in the configuration file and reboots the device.</p>
 <p><code>factoryreset</code></p>
@@ -170,15 +169,13 @@ config/hasp
 config/gui
 config/debug
 </code></pre>
-
 <p>To update the configuration simple issue the same command <code>config/&amp;gt;submodule&amp;lt;</code> with updated json payload.</p>
 <h2 id="multiple-commands">Multiple Commands<a class="headerlink" href="#multiple-commands" title="Permanent link">#</a></h2>
 <p><code>json</code></p>
 <p>When you want to execute multiple commands in one payload, you can use the json command to create an array of commands.</p>
 <p>Each command is an element in this array of strings:</p>
-<pre><code class="json">[&quot;page 5&quot;,&quot;dim 50&quot;,&quot;light on&quot;,&quot;statusupdate&quot;]
+<pre><code class="language-json">[&quot;page 5&quot;,&quot;dim 50&quot;,&quot;light on&quot;,&quot;statusupdate&quot;]
 </code></pre>
-
 <p>The commands are interpreted and processed sequentially.</p>
 
   <br>

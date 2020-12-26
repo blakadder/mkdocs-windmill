@@ -236,7 +236,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>SPI MISO, MOSI and SCLK are shared between the touch controller and the lcd controller.</p>
 <h2 id="lcd-configuration">LCD Configuration<a class="headerlink" href="#lcd-configuration" title="Permanent link">#</a></h2>
 <p>The <code>lcd_config.ini</code> file specifies the different properties of the display, except for the actual pin configuration:</p>
-<pre><code class="ini">raspberrypi =
+<pre><code class="language-ini">raspberrypi =
     -D RPI_DISPLAY_TYPE=1
     -D ST7796_DRIVER=1
     -D TFT_WIDTH=320
@@ -248,7 +248,6 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     -D TOUCH_DRIVER=2046 ; XPT2046 Resistive touch panel driver
     -D SUPPORT_TRANSACTIONS
 </code></pre>
-
 <h2 id="hasp-build_flags">HASP build_flags<a class="headerlink" href="#hasp-build_flags" title="Permanent link">#</a></h2>
 <p>Specify the LCD Configuration to use and define the 7 GPIOs in the environment build flags:</p>
 <pre><code>build_flags =

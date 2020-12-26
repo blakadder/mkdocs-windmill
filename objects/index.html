@@ -283,7 +283,8 @@ Besides the common properties listed above, each object type can have specific p
 
 <details open=""><summary>Show Jsonl Code (Click to expand)</summary>
 
-<pre><code class="json">{&quot;page&quot;:0,&quot;comment&quot;:&quot;---------- Page 0 ----------&quot;}
+
+<pre><code class="language-json">{&quot;page&quot;:0,&quot;comment&quot;:&quot;---------- Page 0 ----------&quot;}
 {&quot;objid&quot;:10,&quot;id&quot;:1,&quot;x&quot;:10,&quot;y&quot;:45,&quot;w&quot;:220,&quot;h&quot;:55,&quot;toggle&quot;:&quot;TRUE&quot;,&quot;txt&quot;:&quot;Push Me \uf0a6&quot;}
 </code></pre>
 
@@ -334,8 +335,10 @@ Besides the common properties listed above, each object type can have specific p
 <ul>
 <li>DOWN: Occurs when a button goes from unpressed to being pressed</li>
 <li>SHORT: The button was released within a short time i.e. a short click has occured</li>
-<li>LONG: Event is send when the button is <em>still</em> being pressed after the threshold time
-<!-- - HOLD: The HOLD event is repeated every 400ms while the button is still pressed --></li>
+<li>LONG: Event is send when the button is <em>still</em> being pressed after the threshold time</li>
+</ul>
+<!-- - HOLD: The HOLD event is repeated every 400ms while the button is still pressed -->
+<ul>
 <li>UP: The button is released after being pressing for a LONG threshold time.</li>
 <li>LOST: This event occurs when the object looses the focus while the screen is still being touched</li>
 </ul>
@@ -402,9 +405,8 @@ Besides the common properties listed above, each object type can have specific p
 </tbody>
 </table>
 <p>Possible wrapping modes are: expand, break, dots, scroll and loop</p>
-<pre><code class="json">{&quot;page&quot;:2,&quot;id&quot;:1,&quot;objid&quot;:12,&quot;h&quot;:24,&quot;w&quot;:120,&quot;txt&quot;:&quot;\ufe05 Icon Demo&quot;}
+<pre><code class="language-json">{&quot;page&quot;:2,&quot;id&quot;:1,&quot;objid&quot;:12,&quot;h&quot;:24,&quot;w&quot;:120,&quot;txt&quot;:&quot;\ufe05 Icon Demo&quot;}
 </code></pre>
-
 <h3 id="arc">Arc<a class="headerlink" href="#arc" title="Permanent link">#</a></h3>
 <p><strong>objid:22</strong></p>
 <p><img alt="lv_arc" src="../assets/images/objects/lv_ex_arc_1.png" />{: .align-center}</p>

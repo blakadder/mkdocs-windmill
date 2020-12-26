@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MkDocs theme focused on navigation and usability.">
-    <meta name="author" content="Dmitry S">
+    <meta name="description" content="Littlev Graphics Library on the MCU to drive a cheap commodity display">
+    
     
     <link rel="shortcut icon" href="./img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Windmill MkDocs Theme</title>
+    <title>HASP - Open Hardware edition</title>
     <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="./css/base.css" rel="stylesheet">
@@ -34,10 +34,12 @@
       var is_top_frame = (window === window.parent);
         
         var pageToc = [
-          {title: "Windmill theme", url: "#_top", children: [
-              {title: "About", url: "#about" },
-              {title: "Installation", url: "#installation" },
-              {title: "Usage", url: "#usage" },
+          {title: "HASP - Open Hardware edition", url: "#_top", children: [
+              {title: "Demo Screens", url: "#demo-screens" },
+              {title: "Features", url: "#features" },
+              {title: "Cloning", url: "#cloning" },
+              {title: "Getting Started", url: "#getting-started" },
+              {title: "Support", url: "#support" },
           ]},
         ];
 
@@ -83,9 +85,9 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <a href="" class="wm-top-brand wm-top-link wm-vcenter">
       
       <div class="wm-top-title">
-        Windmill MkDocs Theme<br>
+        HASP - Open Hardware edition<br>
         
-          <span class="wm-top-version">v1.0.3</span>
+          <span class="wm-top-version">v0.31</span>
         
       </div>
     </a>
@@ -98,7 +100,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   
     <ul class="wm-toctree wm-toc-repo">
       <li class="wm-toc-li wm-toc-lev1">
-      <a class="wm-article-link wm-toc-text" href="https://github.com/gristlabs/mkdocs-windmill/">
+      <a class="wm-article-link wm-toc-text" href="https://github.com/fvanroie/hasp-lvgl/">
         <i class="fa fa-github"></i>
 
         GitHub
@@ -106,32 +108,45 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
       </li>
     </ul>
   <ul class="wm-toctree">
-        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Usage</a>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Home</a>
 </li>
-        <li class="wm-toc-li wm-toc-lev1 "><a href="customization/" class="wm-article-link wm-toc-text">Customization</a>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="hardware/" class="wm-article-link wm-toc-text">Hardware</a>
 </li>
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Samples</span>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="installation/" class="wm-article-link wm-toc-text">Installation</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="wifi-setup/" class="wm-article-link wm-toc-text">Wi-Fi Setup</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="commands/" class="wm-article-link wm-toc-text">Commands</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="faq/" class="wm-article-link wm-toc-text">FAQ</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="pages/" class="wm-article-link wm-toc-text">Pages</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="objects/" class="wm-article-link wm-toc-text">Objects</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="styling/" class="wm-article-link wm-toc-text">Styling</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="example-pages/" class="wm-article-link wm-toc-text">Example pages</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="compiling/" class="wm-article-link wm-toc-text">Compiling</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="firmware-update/" class="wm-article-link wm-toc-text">Firmware update</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Displays</span>
 </li>
 <li class="wm-toc-li-nested collapse">
   <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="sample-a/" class="wm-article-link wm-toc-text">Sample Page A</a>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="displays/MHS4001/" class="wm-article-link wm-toc-text">MHS4001</a>
 </li>
-      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Sample Subfolder</span>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="displays/MRB3511/" class="wm-article-link wm-toc-text">MRB3511</a>
 </li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev3 "><a href="a/sample-a1/" class="wm-article-link wm-toc-text">Sample Subpage A1</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev3 "><a href="a/sample-a2/" class="wm-article-link wm-toc-text">Sample Subpage A2</a>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="displays/Waveshare_40RPi_LCD%28C%29/" class="wm-article-link wm-toc-text">Waveshare 40RPi LCD(C)</a>
 </li>
   </ul>
 </li>
 
-      <li class="wm-toc-li wm-toc-lev2 "><a href="sample-b/" class="wm-article-link wm-toc-text">Sample Page B</a>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="license/" class="wm-article-link wm-toc-text">License</a>
 </li>
-  </ul>
-</li>
-
   </ul>
 </nav>
 
@@ -152,12 +167,12 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="customization/" class="btn btn-xs btn-default pull-right">
+      <a href="hardware/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="customization/" class="btn btn-xs btn-link">
-        Customization
+      <a href="hardware/" class="btn btn-xs btn-link">
+        Hardware
       </a>
     </div>
     
@@ -165,43 +180,120 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="windmill-theme">Windmill theme<a class="headerlink" href="#windmill-theme" title="Permanent link">#</a></h1>
-<h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">#</a></h2>
-<p>Windmill theme focuses on clean usable navigation for large documentation
-projects. It retains the state of the menu of pages and folders across page
-transitions, by keeping navigation to an iframe.</p>
-<p>It also implements a versatile search, featuring term highlighting, and both a
-quick dropdown and a full-page option that allows the user to come back to
-search results.</p>
-<p>Within pages, it uses the default mkdocs theme, including syntax highlighting.</p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
-<p>Install the Windmill theme using <code>pip</code>:</p>
-<pre><code class="sh">pip install mkdocs-windmill
+    <h1 id="hasp-open-hardware-edition">HASP - Open Hardware edition<a class="headerlink" href="#hasp-open-hardware-edition" title="Permanent link">#</a></h1>
+<p><a href="https://github.com/fvanroie/hasp-lvgl/releases"><img alt="GitHub release" src="https://img.shields.io/github/release/fvanroie/hasp-lvgl.svg" /></a>
+<a href="https://github.com/fvanroie/hasp-lvgl/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/mashape/apistatus.svg" /></a>
+<a href="#Contributing"><img alt="contributions welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" /></a>
+<a href="http://github.com/fvanroie/hasp-lvgl/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/fvanroie/hasp-lvgl.svg" /></a>
+<a href="https://github.com/fvanroie/hasp-lvgl/actions?query=workflow%3A%22PlatformIO+CI%22"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/fvanroie/hasp-lvgl/PlatformIO%20CI?label=Build%20Firmware&amp;logo=github&amp;logoColor=%23dddddd" /></a>
+<a href="https://discord.gg/VCWyuhF"><img alt="Discord" src="https://img.shields.io/discord/538814618106331137?color=%237289DA&amp;label=support&amp;logo=discord&amp;logoColor=white" /></a></p>
+<p>This project is a re-implementation of the popular HASwitchPlate sketch created by aderusha.
+The <a href="https://github.com/aderusha/HASwitchPlate">original HASwitchPlate</a> project uses a Wemos D1 mini and requires a Nextion/TJC HMI display.
+This rewrite removes the Nextion/TJC requirement by using the <a href="https://github.com/littlevgl/lvgl">Littlev Graphics Library</a> on the MCU to drive a cheap commodity display.</p>
+<p>This version also adds ESP32 and STM32F4 support to take advantage of the additional hardware capabilities.</p>
+<h2 id="demo-screens">Demo Screens<a class="headerlink" href="#demo-screens" title="Permanent link">#</a></h2>
+<p><img alt="Screenshot" src="https://raw.githubusercontent.com/fvanroie/hasp-lvgl/0.0.11/docs/img/sliders.png" /> &nbsp; 
+<img alt="Screenshot" src="https://raw.githubusercontent.com/fvanroie/hasp-lvgl/0.0.11/docs/img/buttons.png" /> &nbsp; 
+<img alt="Screenshot" src="https://raw.githubusercontent.com/fvanroie/hasp-lvgl/0.0.11/docs/img/mediaplayer.png" /></p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>ESP8266</th>
+<th>ESP32</th>
+<th>STM32F4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SPI display</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+</tr>
+<tr>
+<td>Parallel display</td>
+<td><img alt="❌" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/274c.png" title=":x:" /> no</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+</tr>
+<tr>
+<td>PWM Screen dimming</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+</tr>
+<tr>
+<td>Maximum Page Count</td>
+<td>4</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Object Types / Widgets</td>
+<td>14</td>
+<td>15</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Dynamic Objects</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes</td>
+</tr>
+<tr>
+<td><a href="https://littlevgl.com/themes">Lvgl Theme Support</a></td>
+<td>basic only</td>
+<td>all themes</td>
+<td>tbd</td>
+</tr>
+<tr>
+<td><a href="https://github.com/fvanroie/HMI-Font-Pack/releases">Custom .zi V5 font</a></td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes (latin1)</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> yes (latin1)</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="https://fontawesome.com/cheatsheet/">FontAwesome Icons</a></td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> 1300+</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> 1300+</td>
+<td>no</td>
+</tr>
+<tr>
+<td>PNG images</td>
+<td><img alt="❌" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/274c.png" title=":x:" /> no</td>
+<td><img alt="❔" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2754.png" title=":grey_question:" /> tbd</td>
+<td><img alt="❔" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2754.png" title=":grey_question:" /> tbd</td>
+</tr>
+<tr>
+<td>Network</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> Wifi</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> Wifi</td>
+<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /> Ethernet</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cloning">Cloning<a class="headerlink" href="#cloning" title="Permanent link">#</a></h2>
+<p>Make sure to add the <code>--recursive</code> parameter when cloning the project. Otherwise git will not download the required submodules in the <code>/lib</code> subdirectory.</p>
+<pre><code class="bash">git clone --recursive https://github.com/fvanroie/hasp-lvgl
 </code></pre>
 
-<p>To install and get started with <code>mkdocs</code>, follow <a href="http://www.mkdocs.org/#installation">MkDocs documentation</a>.</p>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h2>
-<p>To use the Windmill theme installed via <code>pip</code>, add this to your <code>mkdocs.yml</code>:</p>
-<pre><code class="yaml">theme: 'windmill'
+<p>If you already cloned hasp-lvgl without the submodules, you can fetch the submodules seperately using:</p>
+<pre><code class="bash">git submodule update --init --recursive
 </code></pre>
 
-<p>If you cloned Windmill from GitHub:</p>
-<pre><code class="yaml">theme:
-  name: null
-  custom_dir: '{INSTALL_DIR}/mkdocs_windmill'
-  # Copy settings from mkdocs_theme.yml, which is ignored by custom_dir themes.
-  static_templates: [404.html]
-  search_index_only: true
-  include_search_page: true
+<p>To build a defierent branch use:</p>
+<pre><code class="bash">git clone --recursive https://github.com/fvanroie/hasp-lvgl
+cd hasp-lvgl
+git checkout 0.1.0-dev
+git submodule update --init --recursive
 </code></pre>
 
-<p>Note that it's important for there to exist a homepage, e.g. a top-level root element in mkdocs 1.0+:</p>
-<pre><code class="yaml">nav:
-  - Home: index.md
-</code></pre>
-
-<p>See <a href="customization/">Customization</a> for a few extra configuration options
-supported by the Windmill theme.</p>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">#</a></h2>
+<p>Check out the <a href="https://github.com/fvanroie/hasp-lvgl/wiki">wiki</a> for how-to's, information and frequently asked questions.</p>
+<h2 id="support">Support<a class="headerlink" href="#support" title="Permanent link">#</a></h2>
+<p>For support using hasp-lvgl, please join the <a href="https://discord.gg/VCWyuhF">#hasp-lvgl channel</a> on Discord.</p>
 
   <br>
     
@@ -214,12 +306,12 @@ supported by the Windmill theme.</p>
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="customization/" class="btn btn-xs btn-default pull-right">
+      <a href="hardware/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="customization/" class="btn btn-xs btn-link">
-        Customization
+      <a href="hardware/" class="btn btn-xs btn-link">
+        Hardware
       </a>
     </div>
     
@@ -230,7 +322,7 @@ supported by the Windmill theme.</p>
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/gristlabs/mkdocs-windmill/edit/master/docs/index.md"><i class="fa fa-github"></i>
+        <a href="https://github.com/fvanroie/hasp-lvgl/edit/master/docs/index.md"><i class="fa fa-github"></i>
 Edit on GitHub</a>
       </p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
@@ -239,6 +331,6 @@ Edit on GitHub</a>
 </body>
 </html>
 <!--
-MkDocs version : 1.0.4
-Build Date UTC : 2020-01-27 21:21:29
+MkDocs version : 1.1.2
+Build Date UTC : 2020-12-26 22:29:36.179293+00:00
 -->

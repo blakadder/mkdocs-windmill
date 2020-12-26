@@ -1,27 +1,29 @@
-site_name: 'Windmill MkDocs Theme'
-site_description: 'MkDocs theme focused on navigation and usability.'
-site_author: 'Dmitry S'
+site_name: 'HASP - Open Hardware edition'
+site_description: 'Littlev Graphics Library on the MCU to drive a cheap commodity display'
+site_author: ''
 
-repo_url: https://github.com/gristlabs/mkdocs-windmill
+repo_url: https://github.com/fvanroie/hasp-lvgl
 
-theme:
-  name: null
-  custom_dir: mkdocs_windmill
-  # Copy settings from mkdocs_theme.yml, which is ignored by custom_dir themes.
-  static_templates: [404.html]
-  search_index_only: true
-  include_search_page: true
+theme: 'windmill'
 
-# This should be renamed to nav for mkdocs 1.0+
-pages:
-- Usage: index.md
-- Customization: customization.md
-- Samples:
-  - Sample Page A: sample-a.md
-  - Sample Subfolder:
-    - Sample Subpage A1: a/sample-a1.md
-    - Sample Subpage A2: a/sample-a2.md
-  - Sample Page B: sample-b.md
+nav:
+  - Home: index.md
+  - hardware.md
+  - installation.md
+  - Wi-Fi Setup: wifi-setup.md
+  - commands.md
+  - FAQ: faq.md
+  - pages.md
+  - objects.md
+  - styling.md
+  - example-pages.md
+  - compiling.md
+  - firmware-update.md
+  - Displays:
+    - displays/MHS4001.md
+    - displays/MRB3511.md
+    - displays/Waveshare_40RPi_LCD(C).md
+
 
 markdown_extensions:
   - toc:
@@ -29,4 +31,4 @@ markdown_extensions:
 
 extra:
   history_buttons: false
-  version: v1.0.4
+  version: v0.31

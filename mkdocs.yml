@@ -9,10 +9,6 @@ theme:
 
 strict: true
 
-plugins:
-  - minify:
-      minify_html: true
-
 nav:
   - Home: index.md
   - hardware.md
@@ -34,8 +30,8 @@ nav:
 
 markdown_extensions:
   - toc:
-      permalink: '#'
-      toc_depth: 3
+     permalink: "~"
+     toc_depth: 3
   - admonition
   - pymdownx.emoji
   - attr_list

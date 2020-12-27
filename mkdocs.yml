@@ -4,7 +4,10 @@ site_author: ''
 
 repo_url: https://github.com/fvanroie/hasp-lvgl
 
-theme: 'windmill'
+theme: 
+  name: windmill
+
+strict: true
 
 plugins:
   - minify:

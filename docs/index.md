@@ -1,18 +1,10 @@
 # HASP - Open Hardware edition
 
-[![GitHub release](https://img.shields.io/github/release/fvanroie/hasp-lvgl.svg)](https://github.com/fvanroie/hasp-lvgl/releases)
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/fvanroie/hasp-lvgl/blob/master/LICENSE)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#Contributing)
-[![GitHub issues](https://img.shields.io/github/issues/fvanroie/hasp-lvgl.svg)](http://github.com/fvanroie/hasp-lvgl/issues)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/fvanroie/hasp-lvgl/PlatformIO%20CI?label=Build%20Firmware&logo=github&logoColor=%23dddddd)](https://github.com/fvanroie/hasp-lvgl/actions?query=workflow%3A%22PlatformIO+CI%22)
-[![Discord](https://img.shields.io/discord/538814618106331137?color=%237289DA&label=support&logo=discord&logoColor=white)][6]
-
 This project is a re-implementation of the popular HASwitchPlate sketch created by aderusha.
 The [original HASwitchPlate][1] project uses a Wemos D1 mini and requires a Nextion/TJC HMI display.
 This rewrite removes the Nextion/TJC requirement by using the [Littlev Graphics Library][2] on the MCU to drive a cheap commodity display.
 
 This version also adds ESP32 and STM32F4 support to take advantage of the additional hardware capabilities.
-
 
 ## Demo Screens
 

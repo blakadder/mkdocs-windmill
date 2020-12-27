@@ -1,10 +1,7 @@
 
-## Example file
+## Code
 
 This is a real-world example of a `pages.jsonl` file:
-
-<details>
-<summary>Show Jsonl Code (Click to expand)</summary>
 
 ```json
 {"page":0,"comment":"---------- Page 0 ----------"}
@@ -37,14 +34,14 @@ This is a real-world example of a `pages.jsonl` file:
 {"objid":10,"id":3,"x":165,"y":270,"w":75,"h":50,"opacity":100,"txt":"Next \uF054"}
 ```
 
-</details>
-
 ## Result
 
-Page 0
+### Page 0
 
-Page 1
+### Page 1
 
-Page 2
+### Page 2
 
-Page 3
+### Page 3
+
+### Page 254

@@ -71,31 +71,27 @@ Besides the common properties listed above, each object type can have specific p
 ### Button
 **objid:10**
 
-<div align="center">
-
 ![lv_btn](assets/images/objects/lv_ex_btn_1.png)
 
-</div>
-
 <details open=""><summary>Show Jsonl Code (Click to expand)</summary>
-
 ```json
 {"page":0,"comment":"---------- Page 0 ----------"}
 {"objid":10,"id":1,"x":10,"y":45,"w":220,"h":55,"toggle":"TRUE","txt":"Push Me \uf0a6"}
 ```
 </details>
 
+
 | Property | Value      | Required | Default | Description
 |----------|------------|----------|---------|--------------
 | toggle   | boolean    | no       | false   | When enabled, creates a toggle-on/toggle-off button. If false, creates a normal button
 | val      | int16      | no       | 0       | The value: 1 for toggled, 0 for untoggled
 | txt      | string     | no       | ""      | The text of the label
-| mode     | string     | no       | expand  | The wrapping mode of long text labels
+| mode     | string     | no       | expand  | The wrapping mode of long text labels (expand, break, dots, scroll and loop)
 
-Normal Switches send touch events out as they occor. The possible events are:
+Normal Switches send touch events out as they occur. The possible events are:
 
-- DOWN: Occurs when a button goes from unpressed to being pressed
-- SHORT: The button was released within a short time i.e. a short click has occured
+- DOWN: Occurs when a button goes from depressed to pressed
+- SHORT: The button was released within a short time i.e. a short click has occurred
 - LONG: Event is send when the button is *still* being pressed after the threshold time
 <!-- - HOLD: The HOLD event is repeated every 400ms while the button is still pressed -->
 - UP: The button is released after being pressing for a LONG threshold time.
@@ -103,12 +99,10 @@ Normal Switches send touch events out as they occor. The possible events are:
 
 Toggle Switches only send out their new value (0 or 1) when toggled.
 
-Possible wrapping modes are: expand, break, dots, scroll and loop
-
 ### Checkbox
 **objid:11**
 
-![lv_checkbox](assets/images/objects/lv_ex_checkbox_1.png){: .align-center}
+![lv_checkbox](assets/images/objects/lv_ex_checkbox_1.png){: align=center }
 
 | Property | Value      | Required | Default    | Description
 |----------|------------|----------|------------|--------------
@@ -118,7 +112,7 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### Text Label
 **objid:12**
 
-![lv_label](assets/images/objects/lv_ex_label_1.png){: .align-center}
+![lv_label](assets/images/objects/lv_ex_label_1.png){: align=center }
 
 | Property | Value      | Required | Default    | Description
 |----------|------------|----------|------------|--------------
@@ -134,7 +128,7 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### Arc
 **objid:22**
 
-![lv_arc](assets/images/objects/lv_ex_arc_1.png){: .align-center}
+![lv_arc](assets/images/objects/lv_ex_arc_1.png){: align=center }
 
 | Property  | Value      | Required | Default | Description
 |-----------|------------|----------|---------|--------------
@@ -142,24 +136,24 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 | max       | int16      | no       | 100     |
 | val       | int16      | no       | 0       |
 | rotation  | int16      | no       | 0       |
-| type      | int16      | no       | normal  | normal, reverse, symetrical
+| type      | int16      | no       | normal  | normal, reverse, symmetrical
 
 
 ### Spinner
 **objid:21**
 
-![lv_spinner](assets/images/objects/lv_ex_spinner_1.png){: .align-center}
+![lv_spinner](assets/images/objects/lv_ex_spinner_1.png){: align=center }
 
 | Property  | Value      | Required | Default | Description
 |-----------|------------|----------|---------|--------------
-| speed     | int16      | no       | 1000    | The time for 1 furn in ms
+| speed     | int16      | no       | 1000    | The time for 1 turn in ms
 | direction | int16      | no       | 100     | 0 for clockwise, 1 for counter-clockwise
-| thickness | int16      | no       | dep. on theme | The width of the arcline
+| thickness | int16      | no       | dep. on theme | The width of the arc line
 
 ### Colorpicker
 **objid:20**
 
-![lv_cpicker](assets/images/objects/lv_ex_cpicker_1.png){: .align-center}
+![lv_cpicker](assets/images/objects/lv_ex_cpicker_1.png){: align=center }
 
 | Property | Value      | Required | Default | Description
 |----------|------------|----------|---------|--------------
@@ -171,7 +165,7 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### Slider
 **objid:30**
 
-![lv_slider](assets/images/objects/lv_ex_slider_1.png){: .align-center}
+![lv_slider](assets/images/objects/lv_ex_slider_1.png){: align=center }
 
 | Property | Value      | Required | Default |
 |----------|------------|----------|---------|
@@ -192,7 +186,7 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### Gauge
 **objid:31**
 
-![lv_gauge](assets/images/objects/lv_ex_gauge_1.png){: .align-center}
+![lv_gauge](assets/images/objects/lv_ex_gauge_1.png){: align=center }
 
 | Property | Value      | Required | Default |
 |----------|------------|----------|---------|
@@ -201,10 +195,10 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 | val      | int16      | no       | 0       |
 
 
-### Progressbar
+### Progress Bar
 **objid:32**
 
-![lv_bar](assets/images/objects/lv_ex_bar_1.png){: .align-center}
+![lv_bar](assets/images/objects/lv_ex_bar_1.png){: align=center }
 
 | Property | Value      | Required | Default |
 |----------|------------|----------|---------|
@@ -216,7 +210,7 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### Switch
 **objid:40**
 
-![lv_switch](assets/images/objects/lv_ex_switch_1.png){: .align-center}
+![lv_switch](assets/images/objects/lv_ex_switch_1.png){: align=center }
 
 | Property   | Value      | Required | Default | Description
 |------------|------------|----------|---------|---------------
@@ -225,7 +219,7 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### LED Indicator
 **objid:41**
 
-![lv_led](assets/images/objects/lv_ex_led_1.png){: .align-center}
+![lv_led](assets/images/objects/lv_ex_led_1.png){: align=center }
 
 | Property   | Value      | Required | Default | Description
 |------------|------------|----------|---------|---------------
@@ -234,7 +228,7 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### Dropdown List
 **objid:50**
 
-![lv_dropdown](assets/images/objects/lv_ex_dropdown_1.png){: .align-center}
+![lv_dropdown](assets/images/objects/lv_ex_dropdown_1.png){: align=center }
 
 | Property | Value      | Required | Default | Description
 |----------|------------|----------|---------|--------------------------
@@ -242,7 +236,7 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 | val      | int16      | no       | 0       | The number of the selected item
 | txt      | string     | no       | ""      | *Read-only* The text of the selected item
 
-To change the currently selected item, use the `val` attribute.
+To change the currently selected item, use the `val` attribute.    
 To change the items in the list, use the `options` attribute.
 
 When the item is changed both `val` and `txt` of the newly selected item are send out.
@@ -251,7 +245,7 @@ When the item is changed both `val` and `txt` of the newly selected item are sen
 ### Roller
 **objid:51**
 
-![lv_roller](assets/images/objects/lv_ex_roller_1.png){: .align-center}
+![lv_roller](assets/images/objects/lv_ex_roller_1.png){: align=center }
 
 | Property | Value      | Required | Default | Description
 |----------|------------|----------|---------|--------------------------
@@ -262,7 +256,7 @@ When the item is changed both `val` and `txt` of the newly selected item are sen
 
 !> A roller does not use the `h` attribute to set its height but uses the `rows` attribute instead.
 
-To change the currently selected item, use the `val` attribute.
+To change the currently selected item, use the `val` attribute.    
 To change the items in the list, use the `options` attribute.
 
 When the item is changed both `val` and `txt` of the newly selected item are send out.

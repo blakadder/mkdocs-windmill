@@ -34,7 +34,7 @@ This version also adds ESP32 and STM32F4 support to take advantage of the additi
 | [Custom .zi V5 font][4] | :white_check_mark: yes (latin1) | :white_check_mark: yes (latin1) | no
 | [FontAwesome Icons][5]  | :white_check_mark: 1300+ | :white_check_mark: 1300+ | no
 | PNG images              | :x: no | :grey_question: tbd | :grey_question: tbd 
-| Network                 | :white_check_mark: Wifi | :white_check_mark: Wifi | :white_check_mark: Ethernet
+| Network                 | :white_check_mark: Wi-Fi | :white_check_mark: Wi-Fi | :white_check_mark: Ethernet
 
 ## Cloning
 

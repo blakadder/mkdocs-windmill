@@ -6,6 +6,10 @@ repo_url: https://github.com/fvanroie/hasp-lvgl
 
 theme: 'windmill'
 
+plugins:
+  - minify:
+      minify_html: true
+
 nav:
   - Home: index.md
   - hardware.md
@@ -17,19 +21,21 @@ nav:
   - objects.md
   - styling.md
   - example-pages.md
-  - compiling.md
   - firmware-update.md
   - Displays:
     - displays/MHS4001.md
     - displays/MRB3511.md
     - displays/Waveshare_40RPi_LCD(C).md
+  - compiling.md
   - license.md
 
 markdown_extensions:
   - toc:
       permalink: '#'
+      toc_depth: 3
   - admonition
   - pymdownx.emoji
+  - attr_list
 
 extra:
   history_buttons: false

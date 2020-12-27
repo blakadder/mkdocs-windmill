@@ -525,6 +525,12 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
     border-color: #fbeed5;
 }
 
+.admonition.example { /* csslint allow: adjoining-classes */
+  color: #999999;
+  background-color: #fdfdfd;
+  border-color: #252525;
+}
+
 .admonition.danger { /* csslint allow: adjoining-classes */
     color: #b94a48;
     background-color: #f2dede;
@@ -534,4 +540,8 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
 .admonition-title {
     font-weight: bold;
     text-align: left;
+}
+
+.float-right {
+    float: right;
 }

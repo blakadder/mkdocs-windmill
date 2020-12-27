@@ -1,5 +1,5 @@
 6 GPIOs are required to drive the SPI display. One additional GPIO is needed for the XPT2046 touch sensor and one extra GPIO for backlight dimming.
-Including the Vcc and Gnd pins, a total of 13 connections need to be made to the MCU:
+Including the VCC and GND pins, a total of 13 connections need to be made to the MCU:
 
 ## Pin Configuration
 
@@ -29,7 +29,7 @@ Pin	  |Function            |ESP32 Pin  |Config Name|Display Pin |
 !> (*)Only the WaveShare 4.0" RPi LCD Revision C has a solder jumper on the back to enable PWM backlight dimming.
 Other revisions of this board do not have this feature.
 
-SPI MISO, MOSI and SCLK are shared between the touch controller and the lcd controller.
+SPI MISO, MOSI and SCLK are shared between the touch controller and the LCD controller.
 
 ## LCD Configuration
 

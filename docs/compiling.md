@@ -1,4 +1,4 @@
-## Cloning
+## Cloning from GitHub
 
 Make sure to add the `--recursive` parameter when cloning the project from GitHub. Otherwise git will not download the required submodules in the `/lib` subdirectory.
 

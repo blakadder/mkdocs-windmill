@@ -209,11 +209,12 @@ Therefor the Lolin TFT 2.4 Touch Shield is used as the development display of ch
 <p>To use PWM dimming on the Lolin TFT 2.4" you must solder the TFT-LED pin to either D1, D2 or D4.
 <strong>D1 is recommended</strong> for backlight control and configured by default.</p>
 <p><img alt="TFT-LED PWM dimming" src="../assets/images/tft-led-pwm.png" /></p>
-<p>!&gt; Do <em>not</em> use D3 for backlight control because it is already in use for touch!</p>
-<blockquote>
-<p>[!ATTENTION]
-It is also <em>not</em> recommended to use D4 for backlight control because it is already in use for PSram on the ESP32-Wrover.</p>
-</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Do <em>not</em> use D3 for backlight control because it is already in use for touch!</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">It is also <em>not</em> recommended to use D4 for backlight control because it is already in use for PSram on the ESP32-Wrover.</p>
+</div>
 <h5 id="compatible-esp-boards">Compatible ESP boards<a class="headerlink" href="#compatible-esp-boards" title="Permanent link">#</a></h5>
 <p><img alt="TFT-LED PWM dimming" src="../assets/images/esp_boards.png" /></p>
 <p>The Lolin TFT 2.4" header is <strong>plug-and-play</strong> compatible with these development boards,
@@ -247,11 +248,13 @@ and accompanying 3.2" ILI9341 FSMC screen (320x240). This hardware is experiment
     <figcaption>Selection of STM32F407 boards.</figcaption>
 </figure>
 
-<p><strong>Warning</strong> Make sure to purchase a compatible screen, preferably from the same vendor.
-There are multiple FSMC interfaces: e.g. One is marked <code>TFT</code>, another is marked <code>New-TFT</code> and
+<div class="admonition warning">
+<p class="admonition-title">Make sure to purchase a compatible screen, preferably from the same vendor.</p>
+</div>
+<p>There are multiple FSMC interfaces: e.g. One is marked <code>TFT</code>, another is marked <code>New-TFT</code> and
 a third has no markings.
-The pinout of each header &amp; display is different and are <strong>not</strong> interchangable!
-<br>You can however use jumper cables instead, but it won't be plug-and-plug anymore.
+The pinout of each header &amp; display is different and are <strong>not</strong> interchangable!</p>
+<p>You can however use jumper cables instead, but it won't be plug-and-plug anymore.
 {: .notice--warning}</p>
 <p>The following boards are being tested:</p>
 <ul>

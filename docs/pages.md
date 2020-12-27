@@ -1,22 +1,25 @@
 The initial layout of the pages is defined by creating a special file on the SPIFFS file system.
+
 This layout is displayed each time HASP starts up.
-You can upload this file *(and other resource assets like fonts and images)* in the web interface Configuration > HASP Settings.
+
+Upload this file *(and other resource assets like fonts and images)* in the web interface **Configuration -> HASP Settings** menu.
 
 ### pages.jsonl
 
-The location of this file is `/pages.jsonl` in the root of the filesystem.
-It uses the [JSON Lines format](http://www.jsonlines.org) with one json object per line.
+The location of this file is `/pages.jsonl` in the root of the filesystem. 
+It uses the [JSON Lines format](http://www.jsonlines.org) with one json object per line. 
 Each line should contain exactly **one** valid json object and end with a line-break `\n` *(not a comma)*.
 
-The file is interpreted **line-by-line**.
-When a malformed line is encountered, the processing of the rest of the file stops.
-If you are missing objects, check the logs to see which line was processed last.
-You probably have a typo in the following line which blocks parsing the rest of the file.
+The file is interpreted **line-by-line**.    
 
-?> The complete file in its entirety is *not* a valid json file.
-?> Each individual line however must be a valid json object.
-?> The file extension is `.jsonl` and not `.json`.
+When a malformed line is encountered, the processing of the rest of the file stops.    
+If you are missing objects, check the logs to see which line was processed last.    
+You probably have a typo in the following line which blocks parsing the rest of the file.    
 
+!!! danger "The complete file in its entirety is *not* a valid json file."
+    Each individual line however must be a valid json object.
+    The file extension is `.jsonl` and not `.json`.
+    
 ### Objects
 Each line in `pages.jsonl` creates **one object** on a page and has to be in the json format.
 The order of objects dictates the layer on the page from bottom to top.
@@ -27,7 +30,7 @@ Example Objects
 {"page":2,"id":2,"objid":50,"x":5,"y":120,"h":90,"w":50,"enabled":"false","hidden":"false"}
 ```
 
-Once the object is created, you can reference it with `p[x].b[y]` where `x` is the pagenumber and `y` is the id of the object.
+Once the object is created, you can reference it with `p[x].b[y]` where `x` is the page number and `y` is the id of the object.
 
 for example:
 ```
